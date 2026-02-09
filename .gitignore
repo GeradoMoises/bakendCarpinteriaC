@@ -1,0 +1,75 @@
+# =========================
+# Docs / misc
+# =========================
+HELP.md
+*.log
+
+# =========================
+# Maven / Gradle build
+# =========================
+target/
+build/
+.mvn/wrapper/maven-wrapper.jar
+
+# (excepciones útiles que ya tenías)
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# =========================
+# Spring / runtime files
+# =========================
+*.springBeans
+*.hprof
+
+# =========================
+# Secrets / env
+# =========================
+.env
+*.env
+application-*.properties
+application-*.yml
+
+# (OJO: deja versionado application.properties si NO tiene claves)
+# Si tu application.properties tiene credenciales, mejor no subirlo.
+# Alternativa: sube application.example.properties
+
+# =========================
+# STS / Eclipse
+# =========================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# =========================
+# NetBeans
+# =========================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
