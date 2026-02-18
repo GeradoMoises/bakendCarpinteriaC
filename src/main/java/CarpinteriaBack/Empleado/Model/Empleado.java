@@ -1,8 +1,10 @@
 package CarpinteriaBack.Empleado.Model;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import CarpinteriaBack.Login.Model.Rol;
 import CarpinteriaBack.Login.Model.Usuario;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
