@@ -6,6 +6,8 @@ import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import CarpinteriaBack.Pedido.Model.Pedido;
 
 @Data
@@ -43,6 +45,7 @@ public class Cliente {
     private String telefono;
 
     @OneToMany(mappedBy = "cliente")
+    @JsonIgnore // ✅ AGREGA ESTO
     private List<Pedido> pedidos;
 
     @PrePersist
