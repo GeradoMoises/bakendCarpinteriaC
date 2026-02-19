@@ -62,7 +62,7 @@ public class SecurityConfig {
                                 "/api/empleados/**",   // ✅ ESTA ES LA CLAVE
                                 "/api/roles/**",
                                 "/api/clientes/**",     // ✅ AGREGA ESTO
-
+                                "/categoria/api/**",      // ✅ AGREGAR
 
                                 "/lineadiseno/api/**",
                                 "/producto/api/**"
