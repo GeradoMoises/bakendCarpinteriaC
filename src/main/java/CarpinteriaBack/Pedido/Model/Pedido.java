@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import CarpinteriaBack.Cliente.Model.Cliente;
 import CarpinteriaBack.Empleado.Model.Empleado;
 import jakarta.persistence.Column;
@@ -33,12 +35,14 @@ public class Pedido {
 
     // FK -> cliente.id_cliente
     @ManyToOne
-    @JoinColumn(name = "id_cliente", nullable = false)
+    @JoinColumn(name="id_cliente", nullable=false)
+    @JsonIgnoreProperties({"pedidos","hibernateLazyInitializer","handler"})
     private Cliente cliente;
 
     // FK -> empleado.id_empleado
     @ManyToOne
-    @JoinColumn(name = "id_empleado", nullable = false)
+    @JoinColumn(name="id_empleado", nullable=false)
+    @JsonIgnoreProperties({"pedidos","hibernateLazyInitializer","handler"})
     private Empleado empleado;
 
     @Column(name = "fecha_pedido", nullable = false)
