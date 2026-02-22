@@ -63,7 +63,7 @@ public class SecurityConfig {
                                 "/api/roles/**",
                                 "/api/clientes/**",     // ✅ AGREGA ESTO
                                 "/categoria/api/**",      // ✅ AGREGAR
-
+                                "/api/pedidos/**",
                                 "/lineadiseno/api/**",
                                 "/producto/api/**"
                         ).hasRole("ADMINISTRADOR")
