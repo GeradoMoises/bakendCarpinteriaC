@@ -1,6 +1,7 @@
 package CarpinteriaBack.Empleado.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import CarpinteriaBack.Login.Model.Rol;
@@ -56,7 +57,7 @@ public class Empleado {
     private String celular;
 
     @OneToOne(mappedBy = "empleado")
-    @ToString.Exclude     // ⛔ evita ciclo infinito con Usuario
-    @JsonIgnore
+    @ToString.Exclude
+    @JsonBackReference
     private Usuario usuario;
 }

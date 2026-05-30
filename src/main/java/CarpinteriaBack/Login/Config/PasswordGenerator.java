@@ -1,4 +1,4 @@
-package CarpinteriaBack.Login.Config;
+/*package CarpinteriaBack.Login.Config;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -17,4 +17,4 @@ public class PasswordGenerator implements CommandLineRunner {
     public void run(String... args) {
         System.out.println("BCrypt(admin123) = " + encoder.encode("admin123"));
     }
-}
+}*/
